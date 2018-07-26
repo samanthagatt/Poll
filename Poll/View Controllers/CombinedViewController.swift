@@ -8,28 +8,31 @@
 
 import UIKit
 
-class CombinedViewController: UIViewController {
+class CombinedViewController: UIViewController, VoteControllerProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Since these embedded views of the Voting and Results VC/TVC are DIFFERENT instances of their respective controllers -- these instances need to have the same voteController as the originals
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "EmbedVoting" || segue.identifier == "EmbedResults" {
+            
+            // Casts the destination VC (the embedded view) as a VoteControllerProtocol so we can use its voteController variable
+            if let destinationVC = segue.destination as? VoteControllerProtocol {
+                
+                // Assigns voteController with the same voteController of the destinationVCs
+                voteController = destinationVC.voteController
+            }
+        }
+        
     }
-    */
-
+    
+    var voteController: VoteController?
 }

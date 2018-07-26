@@ -22,14 +22,14 @@
                                 <rect key="frame" x="0.0" y="323" width="375" height="344"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="UGs-f0-Hfk" kind="embed" identifier="ResultsEmbeddedInCombined" id="aAd-22-O2h"/>
+                                    <segue destination="UGs-f0-Hfk" kind="embed" identifier="EmbedResults" id="aAd-22-O2h"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9t-FJ-iv1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="MrC-ol-sew" kind="embed" identifier="VotingEmbeddedInCombined" id="HBa-fh-xBB"/>
+                                    <segue destination="MrC-ol-sew" kind="embed" identifier="EmbedVoting" id="HBa-fh-xBB"/>
                                 </connections>
                             </containerView>
                         </subviews>
