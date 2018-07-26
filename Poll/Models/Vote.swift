@@ -8,6 +8,7 @@
 
 import Foundation
 
+// The vote struct is just a model of what a vote should look like
 struct Vote {
     let name : String
     let response : String
