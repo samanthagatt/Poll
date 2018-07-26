@@ -51,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D66696E3210A4CE40086D76B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6D337B5210A147C00EA8149 /* PollingTabBarViewController.swift */,
+				D6D337AA210A0A0200EA8149 /* VotingViewController.swift */,
+				D6D337AF210A0DD900EA8149 /* ResultsTableViewController.swift */,
+				D6D337B3210A10BC00EA8149 /* CombinedViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		D6D33786210A050600EA8149 = {
 			isa = PBXGroup;
 			children = (
@@ -70,10 +81,11 @@
 		D6D33791210A050600EA8149 /* Poll */ = {
 			isa = PBXGroup;
 			children = (
+				D6D33792210A050600EA8149 /* AppDelegate.swift */,
 				D6D337A4210A052D00EA8149 /* Vote.swift */,
 				D6D337A6210A07BE00EA8149 /* VoteController.swift */,
-				D6D33792210A050600EA8149 /* AppDelegate.swift */,
-				D6D337AE210A0D3C00EA8149 /* Storyboards and VCs */,
+				D66696E3210A4CE40086D76B /* View Controllers */,
+				D6D337AE210A0D3C00EA8149 /* Storyboards */,
 				D6D33799210A050800EA8149 /* Assets.xcassets */,
 				D6D3379B210A050800EA8149 /* LaunchScreen.storyboard */,
 				D6D3379E210A050800EA8149 /* Info.plist */,
@@ -81,19 +93,15 @@
 			path = Poll;
 			sourceTree = "<group>";
 		};
-		D6D337AE210A0D3C00EA8149 /* Storyboards and VCs */ = {
+		D6D337AE210A0D3C00EA8149 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				D6D33796210A050600EA8149 /* Main.storyboard */,
-				D6D337B5210A147C00EA8149 /* PollingTabBarViewController.swift */,
 				D6D337A8210A093000EA8149 /* Voting.storyboard */,
-				D6D337AA210A0A0200EA8149 /* VotingViewController.swift */,
 				D6D337AC210A0D0800EA8149 /* Results.storyboard */,
-				D6D337AF210A0DD900EA8149 /* ResultsTableViewController.swift */,
 				D6D337B1210A0F0400EA8149 /* Combined.storyboard */,
-				D6D337B3210A10BC00EA8149 /* CombinedViewController.swift */,
 			);
-			path = "Storyboards and VCs";
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
