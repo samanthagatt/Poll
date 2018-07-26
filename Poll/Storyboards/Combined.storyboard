@@ -18,22 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vib-NQ-SNz">
-                                <rect key="frame" x="0.0" y="323" width="375" height="344"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vib-NQ-SNz">
+                                <rect key="frame" x="0.0" y="325" width="375" height="342"/>
                                 <connections>
                                     <segue destination="UGs-f0-Hfk" kind="embed" identifier="EmbedResults" id="aAd-22-O2h"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9t-FJ-iv1">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9t-FJ-iv1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="MrC-ol-sew" kind="embed" identifier="EmbedVoting" id="HBa-fh-xBB"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w9t-FJ-iv1" firstAttribute="trailing" secondItem="vib-NQ-SNz" secondAttribute="trailing" id="42a-Ec-0rS"/>
+                            <constraint firstItem="vib-NQ-SNz" firstAttribute="bottom" secondItem="50d-eV-as2" secondAttribute="bottom" id="Sp8-Ic-mPM"/>
+                            <constraint firstAttribute="trailing" secondItem="w9t-FJ-iv1" secondAttribute="trailing" id="UNt-ac-4ju"/>
+                            <constraint firstItem="w9t-FJ-iv1" firstAttribute="leading" secondItem="3hr-wt-NpS" secondAttribute="leading" id="ZWW-j1-FXX"/>
+                            <constraint firstItem="vib-NQ-SNz" firstAttribute="top" secondItem="3hr-wt-NpS" secondAttribute="top" constant="325" id="iok-K0-V65"/>
+                            <constraint firstItem="w9t-FJ-iv1" firstAttribute="leading" secondItem="vib-NQ-SNz" secondAttribute="leading" id="sc6-UD-Mb4"/>
+                            <constraint firstItem="w9t-FJ-iv1" firstAttribute="top" secondItem="3hr-wt-NpS" secondAttribute="top" id="yGI-hP-Zvy"/>
+                            <constraint firstItem="vib-NQ-SNz" firstAttribute="top" secondItem="w9t-FJ-iv1" secondAttribute="bottom" id="zAQ-dg-5Df"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="50d-eV-as2"/>
                     </view>
                 </viewController>
