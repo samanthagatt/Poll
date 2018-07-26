@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Combined View Controller-->
+        <!--Combined-->
         <scene sceneID="FB1-BJ-awD">
             <objects>
                 <viewController id="LjK-pl-2LD" customClass="CombinedViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vib-NQ-SNz">
-                                <rect key="frame" x="0.0" y="325" width="375" height="342"/>
+                                <rect key="frame" x="0.0" y="325" width="375" height="293"/>
                                 <connections>
                                     <segue destination="UGs-f0-Hfk" kind="embed" identifier="EmbedResults" id="aAd-22-O2h"/>
                                 </connections>
@@ -44,6 +44,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="50d-eV-as2"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Combined" id="fJi-za-V8B"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWG-hM-wX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

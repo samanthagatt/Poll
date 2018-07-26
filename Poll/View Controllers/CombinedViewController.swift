@@ -28,7 +28,7 @@ class CombinedViewController: UIViewController, VoteControllerProtocol {
             if let destinationVC = segue.destination as? VoteControllerProtocol {
                 
                 // Assigns voteController with the same voteController of the destinationVCs
-                voteController = destinationVC.voteController
+                destinationVC.voteController = voteController
             }
         }
         

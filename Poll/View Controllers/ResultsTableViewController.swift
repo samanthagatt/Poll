@@ -12,7 +12,7 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
 
     // Called right before the view shows on the user's screen
     override func viewWillAppear(_ animated: Bool) {
-        self.viewWillAppear(animated)
+        super.viewWillAppear(animated)
         
         // Updates the tableView -- so it will show any new notes added to the notes array from another tab / view
         tableView.reloadData()

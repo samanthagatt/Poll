@@ -21,6 +21,10 @@ class VotingViewController: UIViewController, VoteControllerProtocol {
         
         // Creates an instance of Vote and appends it to the votes array of the voteController every time the button is pushed
         voteController?.create(name: name, response: response)
+        
+        // Prints number of votes in votes array to the console whenever the submit button is pushed to see if it's actually adding the input to the votes array
+        guard let voteCount = voteController?.votes.count else { return }
+        print("\(voteCount)")
     }
     
     @IBOutlet weak var nameTextField: UITextField!
