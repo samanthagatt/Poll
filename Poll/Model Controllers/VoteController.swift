@@ -8,7 +8,7 @@
 
 import Foundation
 
-// The vote controller can control when a vote is made and appends it to the votes array
+// The vote controller can control when a vote is made and and track what votes have been made (votes array)
 class VoteController {
     
     private(set) var votes : [Vote] = []
@@ -16,7 +16,7 @@ class VoteController {
     func create(name: String, response: String) {
         
         // Could do votes.append(Vote(name: name, response: response)) instead
-        // but below is more human readable
+        // but I think the below is more human readable
         let vote = Vote(name: name, response: response)
         votes.append(vote)
     }

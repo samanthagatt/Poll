@@ -8,35 +8,24 @@
 
 import UIKit
 
-class VotingViewController: UIViewController {
+class VotingViewController: UIViewController, VoteControllerProtocol {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    // What the button will do every time it is pushed
     @IBAction func submitButtonTapped(_ sender: Any) {
+        
+        // Unwraps the optional strings the users can input from the text field
+        guard let name = nameTextField.text,
+            let response = responseTextField.text else {
+                return
+        }
+        
+        // Creates an instance of Vote and appends it to the votes array of the voteController every time the button is pushed
+        voteController?.create(name: name, response: response)
     }
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var responseTextField: UITextField!
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
+    var voteController: VoteController?
 
 }

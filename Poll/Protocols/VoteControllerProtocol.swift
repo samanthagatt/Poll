@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Everything that conforms to this protocol needs to have a voteController variable
 protocol VoteControllerProtocol: class {
     var voteController: VoteController? { get set }
 }
