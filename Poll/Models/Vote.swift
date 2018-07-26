@@ -12,4 +12,7 @@ import Foundation
 struct Vote {
     let name : String
     let response : String
+    
+    // Added for bonus
+    let time : String
 }

@@ -13,11 +13,11 @@ class VoteController {
     
     private(set) var votes : [Vote] = []
     
-    func create(name: String, response: String) {
+    func create(name: String, response: String, time: String) {
         
         // Could do votes.append(Vote(name: name, response: response)) instead
         // but I think the below is more human readable
-        let vote = Vote(name: name, response: response)
+        let vote = Vote(name: name, response: response, time: time)
         votes.append(vote)
     }
 }

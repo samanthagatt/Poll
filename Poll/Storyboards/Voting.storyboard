@@ -65,6 +65,7 @@
                     <connections>
                         <outlet property="nameTextField" destination="7PR-cp-oFV" id="8zy-Hq-FxC"/>
                         <outlet property="responseTextField" destination="4ak-O9-DcR" id="KGw-bh-pLL"/>
+                        <outlet property="submitButton" destination="HkE-Lq-fWY" id="rt9-Ho-3JL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoV-g0-stb" userLabel="First Responder" sceneMemberID="firstResponder"/>

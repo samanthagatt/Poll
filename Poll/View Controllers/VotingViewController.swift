@@ -19,16 +19,19 @@ class VotingViewController: UIViewController, VoteControllerProtocol {
                 return
         }
         
+        let currentTime = "\(NSDate().timeIntervalSince1970)"
+        
         // Creates an instance of Vote and appends it to the votes array of the voteController every time the button is pushed
-        voteController?.create(name: name, response: response)
+        voteController?.create(name: name, response: response, time: currentTime)
         
         // Prints number of votes in votes array to the console whenever the submit button is pushed to see if it's actually adding the input to the votes array
         guard let voteCount = voteController?.votes.count else { return }
-        print("\(voteCount)")
+        print("\(voteCount) \(currentTime)")
     }
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var responseTextField: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
     
     var voteController: VoteController?
 
