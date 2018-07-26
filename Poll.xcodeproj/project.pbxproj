@@ -12,7 +12,8 @@
 		D6D33798210A050600EA8149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D33796210A050600EA8149 /* Main.storyboard */; };
 		D6D3379A210A050800EA8149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D33799210A050800EA8149 /* Assets.xcassets */; };
 		D6D3379D210A050800EA8149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D3379B210A050800EA8149 /* LaunchScreen.storyboard */; };
-		D6D337A5210A052D00EA8149 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D337A4210A052D00EA8149 /* Note.swift */; };
+		D6D337A5210A052D00EA8149 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D337A4210A052D00EA8149 /* Vote.swift */; };
+		D6D337A7210A07BE00EA8149 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D337A6210A07BE00EA8149 /* VoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		D6D33799210A050800EA8149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6D3379C210A050800EA8149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6D3379E210A050800EA8149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6D337A4210A052D00EA8149 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		D6D337A4210A052D00EA8149 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		D6D337A6210A07BE00EA8149 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 		D6D33791210A050600EA8149 /* Poll */ = {
 			isa = PBXGroup;
 			children = (
-				D6D337A4210A052D00EA8149 /* Note.swift */,
+				D6D337A4210A052D00EA8149 /* Vote.swift */,
+				D6D337A6210A07BE00EA8149 /* VoteController.swift */,
 				D6D33792210A050600EA8149 /* AppDelegate.swift */,
 				D6D33794210A050600EA8149 /* ViewController.swift */,
 				D6D33796210A050600EA8149 /* Main.storyboard */,
@@ -139,8 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D33795210A050600EA8149 /* ViewController.swift in Sources */,
+				D6D337A7210A07BE00EA8149 /* VoteController.swift in Sources */,
 				D6D33793210A050600EA8149 /* AppDelegate.swift in Sources */,
-				D6D337A5210A052D00EA8149 /* Note.swift in Sources */,
+				D6D337A5210A052D00EA8149 /* Vote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
