@@ -14,6 +14,8 @@
 		D6D3379D210A050800EA8149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D3379B210A050800EA8149 /* LaunchScreen.storyboard */; };
 		D6D337A5210A052D00EA8149 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D337A4210A052D00EA8149 /* Vote.swift */; };
 		D6D337A7210A07BE00EA8149 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D337A6210A07BE00EA8149 /* VoteController.swift */; };
+		D6D337A9210A093000EA8149 /* Voting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D337A8210A093000EA8149 /* Voting.storyboard */; };
+		D6D337AB210A0A0200EA8149 /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D337AA210A0A0200EA8149 /* VotingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D6D3379E210A050800EA8149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6D337A4210A052D00EA8149 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		D6D337A6210A07BE00EA8149 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
+		D6D337A8210A093000EA8149 /* Voting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Voting.storyboard; sourceTree = "<group>"; };
+		D6D337AA210A0A0200EA8149 /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				D6D33792210A050600EA8149 /* AppDelegate.swift */,
 				D6D33794210A050600EA8149 /* ViewController.swift */,
 				D6D33796210A050600EA8149 /* Main.storyboard */,
+				D6D337A8210A093000EA8149 /* Voting.storyboard */,
+				D6D337AA210A0A0200EA8149 /* VotingViewController.swift */,
 				D6D33799210A050800EA8149 /* Assets.xcassets */,
 				D6D3379B210A050800EA8149 /* LaunchScreen.storyboard */,
 				D6D3379E210A050800EA8149 /* Info.plist */,
@@ -131,6 +137,7 @@
 				D6D3379D210A050800EA8149 /* LaunchScreen.storyboard in Resources */,
 				D6D3379A210A050800EA8149 /* Assets.xcassets in Resources */,
 				D6D33798210A050600EA8149 /* Main.storyboard in Resources */,
+				D6D337A9210A093000EA8149 /* Voting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +152,7 @@
 				D6D337A7210A07BE00EA8149 /* VoteController.swift in Sources */,
 				D6D33793210A050600EA8149 /* AppDelegate.swift in Sources */,
 				D6D337A5210A052D00EA8149 /* Vote.swift in Sources */,
+				D6D337AB210A0A0200EA8149 /* VotingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
